@@ -19,7 +19,7 @@ setup(
     url="https://github.com/kamoshika9999/PythonTest.git",
     packages=find_packages("GUItest/src"),
     package_dir={"": "GUItest/src"},
-    py_modules=[splitext(basename(path))[0] for path in glob('GUItest/src/*.py')],
+    py_modules=[splitext(basename(path))[0] for path in glob('src/*.py')],
     include_package_data=True,
     zip_safe=False,
     install_requires=_requires_from_file('requirements.txt'),
