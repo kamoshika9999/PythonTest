@@ -27,4 +27,10 @@ if __name__=="__main__":
     widget.show()
     sys.exit(app.exec_())
 
+def main():
+    app=QApplication(sys.argv)
+    widget=GUItest()
+    widget.show()
+    sys.exit(app.exec_())
+
 

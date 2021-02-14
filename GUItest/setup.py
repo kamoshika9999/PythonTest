@@ -24,6 +24,7 @@ setup(
     zip_safe=False,
     install_requires=_requires_from_file('requirements.txt'),
     setup_requires=["pytest-runner"],
-    tests_require=["pytest", "pytest-cov"]
+    tests_require=["pytest", "pytest-cov"],
+    entry_points={'console_scripts':['guitest = pk1.main:main' ]}
 )
 
