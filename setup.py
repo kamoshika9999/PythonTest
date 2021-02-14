@@ -17,7 +17,7 @@ setup(
     description="パッケージの説明",
     author="sureisu",
     url="https://github.com/kamoshika9999/PythonTest.git",
-    packages=find_packages("src"),
+    packages=find_packages("GUItest/src"),
     package_dir={"": "src"},
     py_modules=[splitext(basename(path))[0] for path in glob('src/*.py')],
     include_package_data=True,
