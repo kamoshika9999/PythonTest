@@ -17,14 +17,14 @@ setup(
     description="パッケージの説明",
     author="sureisu",
     url="https://github.com/kamoshika9999/PythonTest.git",
-    packages=find_packages("src"),
-    package_dir={"": "src"},
-    py_modules=[splitext(basename(path))[0] for path in glob('src/*.py')],
+    packages=find_packages("GUItest/src"),
+    package_dir={"": "GUItest/src"},
+    py_modules=[splitext(basename(path))[0] for path in glob('GUItest/src/*.py')],
     include_package_data=True,
     zip_safe=False,
     install_requires=_requires_from_file('requirements.txt'),
     setup_requires=["pytest-runner"],
     tests_require=["pytest", "pytest-cov"],
-    entry_points={'console_scripts':['guitest = pk1.main:main' ]}
+    entry_points={'console_scripts':['guitest = GUItest.src.pk1.main:main' ]}
 )
 
