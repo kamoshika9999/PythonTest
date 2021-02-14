@@ -6,7 +6,6 @@ Created on 2021/02/13
 import sys
 from PyQt5.QtCore import pyqtSlot
 from  PyQt5.QtWidgets import QApplication,QMainWindow
-from PyQt5.uic import loadUi
 from src.pk1.ui_test import Ui_MainWindow
 
 
@@ -19,7 +18,7 @@ class GUItest(QMainWindow,Ui_MainWindow):
 
     #@pyqtSlot()
     #def onPushButtonCliked(self):
-     #   self.label1.setText(self.textEdit.text)
+    #   self.label1.setText(self.textEdit.text)
 
 if __name__=="__main__":
     app=QApplication(sys.argv)
