@@ -6,10 +6,10 @@ Created on 2021/02/13
 import sys
 from PyQt5.QtCore import pyqtSlot
 from  PyQt5.QtWidgets import QApplication,QMainWindow
-import os
-sys.path.append(os.path.abspath("."))
+#import os
+#sys.path.append(os.path.abspath("."))
 
-from .ui_test import *
+from pk1.ui_test import *
 
 class GUItest(QMainWindow,Ui_MainWindow):
     def __init__(self, parent=None):
