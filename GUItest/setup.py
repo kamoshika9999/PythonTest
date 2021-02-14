@@ -11,14 +11,14 @@ def _requires_from_file(filename):
 
 
 setup(
-    name="パッケージ名",
+    name="GUItest",
     version="0.1.0",
     license="ライセンス",
     description="パッケージの説明",
-    author="作成者",
-    url="GitHubなどURL",
+    author="sureisu",
+    url="https://github.com/kamoshika9999/PythonTest.git",
     packages=find_packages("src"),
-    package_dir={"": "src"},
+    package_dir={"pk1": "src"},
     py_modules=[splitext(basename(path))[0] for path in glob('src/*.py')],
     include_package_data=True,
     zip_safe=False,
